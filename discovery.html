@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fragrance Discovery Guide & Quiz | SCENTORA – Find Your Olfactory Match</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/scentora-logo.png">
+  <link rel="apple-touch-icon" href="images/scentora-logo.png">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            scentora: {
+              cream: '#F7F1E8',
+              ivory: '#FFFDF9',
+              espresso: '#30231F',
+              espressoDark: '#241A17',
+              gold: '#B89A65',
+              taupe: '#C9BBAA'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#FFFDF9] text-[#30231F] selection:bg-[#B89A65] selection:text-[#FFFDF9]">
+
+  <!-- Global Sticky Header Mount Point -->
+  <div id="scentora-header"></div>
+
+  <!-- MAIN CONTENT: EXACTLY 3 CONTENT SECTIONS AS SPECIFIED -->
+  <main>
+
+    <!-- SECTION 1: EXPLORE FRAGRANCE FAMILIES -->
+    <section class="py-20 lg:py-24 bg-[#FFFDF9] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-3">Olfactory Taxonomy</span>
+          <h1 class="font-serif text-4xl sm:text-6xl font-light tracking-tight text-[#30231F]">
+            Explore Fragrance Families
+          </h1>
+          <div class="w-20 h-0.5 bg-[#B89A65] mx-auto my-6"></div>
+          <p class="text-sm sm:text-base text-[#68534c] font-light leading-relaxed">
+            Every creation in haute parfumerie belongs to an ancestral family defined by dominant aromatic accords. Discover the personality, origins, and botanical nuances of each realm.
+          </p>
+        </div>
+
+        <!-- 6 Families Grid: Floral, Woody, Fresh, Citrus, Oriental, Gourmand with unique photography -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- 1. Floral -->
+          <div class="group rounded-2xl overflow-hidden bg-[#F7F1E8] border border-[#B89A65]/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=800&q=80" alt="Floral Fragrance Family - Grasse Rose and Tuberose Harvest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-[#30231F]/90 text-[#B89A65] text-[10px] uppercase tracking-widest px-3 py-1 rounded">
+                Elegance & Romanticism
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 class="font-serif text-2xl text-[#30231F]">Floral</h3>
+                <p class="text-xs text-[#68534c] leading-relaxed mt-2 font-light">
+                  Centifolia May rose, twilight tuberose, royal jasmine sambac, and powdery orange blossom. Known for grace, intimacy and luminous charm.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between text-xs">
+                <span class="text-[#B89A65] font-medium">Signature: Rose Impériale</span>
+                <a href="shop.html?family=Floral" class="text-[#30231F] font-semibold underline hover:text-[#B89A65]">Shop Floral</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Woody -->
+          <div class="group rounded-2xl overflow-hidden bg-[#F7F1E8] border border-[#B89A65]/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80" alt="Woody Fragrance Family - Misty Forest and Sandalwood" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-[#30231F]/90 text-[#B89A65] text-[10px] uppercase tracking-widest px-3 py-1 rounded">
+                Strength & Groundedness
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 class="font-serif text-2xl text-[#30231F]">Woody</h3>
+                <p class="text-xs text-[#68534c] leading-relaxed mt-2 font-light">
+                  Aged Cambodian agarwood, Mysore sandalwood, smoked cedar and earth-steeped Haitian vetiver. Delivers authoritative quiet confidence.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between text-xs">
+                <span class="text-[#B89A65] font-medium">Signature: Ébène Céleste</span>
+                <a href="shop.html?family=Woody" class="text-[#30231F] font-semibold underline hover:text-[#B89A65]">Shop Woody</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Fresh -->
+          <div class="group rounded-2xl overflow-hidden bg-[#F7F1E8] border border-[#B89A65]/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Fresh Fragrance Family - Clean Marine Waters and Sea Breeze" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-[#30231F]/90 text-[#B89A65] text-[10px] uppercase tracking-widest px-3 py-1 rounded">
+                Vitality & Clarity
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 class="font-serif text-2xl text-[#30231F]">Fresh</h3>
+                <p class="text-xs text-[#68534c] leading-relaxed mt-2 font-light">
+                  Glacial waters, crushed juniper berries, marine sea-salt accords and dew-kissed sage leaves. Invigorating and effortlessly modern.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between text-xs">
+                <span class="text-[#B89A65] font-medium">Signature: Aquae Mirabilis</span>
+                <a href="shop.html?family=Fresh" class="text-[#30231F] font-semibold underline hover:text-[#B89A65]">Shop Fresh</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Citrus -->
+          <div class="group rounded-2xl overflow-hidden bg-[#F7F1E8] border border-[#B89A65]/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="400">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="Citrus Fragrance Family - Sunlit Mediterranean Citrus Groves" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-[#30231F]/90 text-[#B89A65] text-[10px] uppercase tracking-widest px-3 py-1 rounded">
+                Radiance & Sunshine
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 class="font-serif text-2xl text-[#30231F]">Citrus</h3>
+                <p class="text-xs text-[#68534c] leading-relaxed mt-2 font-light">
+                  Calabrian bergamot zest, tart Amalfi cedrat, chinotto orange and neroli blossoms. Vibrant, sun-drenched and euphoric.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between text-xs">
+                <span class="text-[#B89A65] font-medium">Signature: Cédrat Azur</span>
+                <a href="shop.html?family=Citrus" class="text-[#30231F] font-semibold underline hover:text-[#B89A65]">Shop Citrus</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Oriental -->
+          <div class="group rounded-2xl overflow-hidden bg-[#F7F1E8] border border-[#B89A65]/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="500">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80" alt="Oriental Fragrance Family - Amber Resin and Precious Spices" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-[#30231F]/90 text-[#B89A65] text-[10px] uppercase tracking-widest px-3 py-1 rounded">
+                Opulence & Mystery
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 class="font-serif text-2xl text-[#30231F]">Oriental</h3>
+                <p class="text-xs text-[#68534c] leading-relaxed mt-2 font-light">
+                  Melted Baltic amber crystals, sacred incense tears, spiced labdanum, cinnamon and golden saffron. Rich, intoxicating and nocturnal.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between text-xs">
+                <span class="text-[#B89A65] font-medium">Signature: Ambre Nocturne</span>
+                <a href="shop.html?family=Oriental" class="text-[#30231F] font-semibold underline hover:text-[#B89A65]">Shop Oriental</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Gourmand -->
+          <div class="group rounded-2xl overflow-hidden bg-[#F7F1E8] border border-[#B89A65]/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="600">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Gourmand Fragrance Family - Bourbon Vanilla Pods and Spices" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <span class="absolute top-4 left-4 bg-[#30231F]/90 text-[#B89A65] text-[10px] uppercase tracking-widest px-3 py-1 rounded">
+                Decadence & Warmth
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <h3 class="font-serif text-2xl text-[#30231F]">Gourmand</h3>
+                <p class="text-xs text-[#68534c] leading-relaxed mt-2 font-light">
+                  Double-distilled Bourbon vanilla caviar, roasted tonka bean, dark spiced rum and caramelized praline. Comforting, sweet and irresistibly sensual.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between text-xs">
+                <span class="text-[#B89A65] font-medium">Signature: Vanille Sublime</span>
+                <a href="shop.html?family=Gourmand" class="text-[#30231F] font-semibold underline hover:text-[#B89A65]">Shop Gourmand</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: UNDERSTANDING FRAGRANCE NOTES & INTERACTIVE PYRAMID -->
+    <section class="py-24 bg-[#241A17] text-[#FFFDF9] relative overflow-hidden">
+      <!-- Ambient Lighting -->
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#B89A65]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-3">Olfactory Architecture</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight text-[#FFFDF9]">Understanding Fragrance Notes</h2>
+          <div class="w-16 h-0.5 bg-[#B89A65] mx-auto my-4"></div>
+          <p class="text-sm sm:text-base text-[#C9BBAA] font-light">
+            Like a musical chord unfolding through time, a luxury fragrance evolves upon your skin in three distinct harmonic tiers. Click each pyramid level to inspect its molecular evaporation rate.
+          </p>
+        </div>
+
+        <!-- Interactive Pyramid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Pyramid Interactive Graphic (6 cols) -->
+          <div class="lg:col-span-6 flex flex-col items-center justify-center space-y-4" data-aos="zoom-in">
+            
+            <!-- Tier 1: Top Notes -->
+            <button id="pyramid-btn-top" onclick="selectPyramidTier('top')" class="w-full max-w-[280px] p-4 rounded-xl bg-gradient-to-r from-[#B89A65]/30 to-[#B89A65]/60 border border-[#B89A65] text-center shadow-lg transition-all transform hover:scale-105 active:scale-95 focus:outline-none">
+              <span class="text-[10px] tracking-[0.25em] uppercase text-[#FFFDF9] block">Tier 1 • 0 - 30 Minutes</span>
+              <h4 class="font-serif text-xl sm:text-2xl font-bold text-[#FFFDF9]">Top Notes (Head)</h4>
+              <p class="text-[11px] text-[#F7F1E8]/90">Bergamot, Pink Pepper, Sea Salt, Mint</p>
+            </button>
+
+            <!-- Tier 2: Heart Notes -->
+            <button id="pyramid-btn-heart" onclick="selectPyramidTier('heart')" class="w-full max-w-[360px] p-4 sm:p-5 rounded-xl bg-gradient-to-r from-[#30231F] to-[#402e29] border border-[#B89A65]/50 text-center shadow-lg transition-all transform hover:scale-105 active:scale-95 focus:outline-none">
+              <span class="text-[10px] tracking-[0.25em] uppercase text-[#B89A65] block">Tier 2 • 30 Mins - 4 Hours</span>
+              <h4 class="font-serif text-xl sm:text-2xl font-bold text-[#FFFDF9]">Heart Notes (Corpse)</h4>
+              <p class="text-[11px] text-[#C9BBAA]">Centifolia Rose, Jasmine, Smoked Birch, Incense</p>
+            </button>
+
+            <!-- Tier 3: Base Notes -->
+            <button id="pyramid-btn-base" onclick="selectPyramidTier('base')" class="w-full max-w-[440px] p-5 sm:p-6 rounded-xl bg-gradient-to-r from-[#1c1412] to-[#2b1f1b] border border-[#B89A65]/30 text-center shadow-lg transition-all transform hover:scale-105 active:scale-95 focus:outline-none">
+              <span class="text-[10px] tracking-[0.25em] uppercase text-[#B89A65] block">Tier 3 • 4 - 24+ Hours</span>
+              <h4 class="font-serif text-xl sm:text-2xl font-bold text-[#FFFDF9]">Base Notes (Fond)</h4>
+              <p class="text-[11px] text-[#C9BBAA]">Cambodian Oud, Bourbon Vanilla, Amber, Sandalwood</p>
+            </button>
+
+          </div>
+
+          <!-- Dynamic Tier Explanation Display Panel (6 cols) -->
+          <div class="lg:col-span-6 bg-[#30231F] rounded-2xl border border-[#B89A65]/40 p-8 sm:p-10 shadow-2xl space-y-6" data-aos="fade-left">
+            <div class="flex items-center justify-between border-b border-[#B89A65]/20 pb-4">
+              <span id="tier-badge" class="px-3 py-1 bg-[#B89A65]/20 text-[#B89A65] text-xs uppercase tracking-widest rounded-full font-medium">Selected: Top Notes</span>
+              <span id="tier-evap" class="text-xs text-[#C9BBAA]">Evaporation: Rapid</span>
+            </div>
+
+            <div class="space-y-3">
+              <h3 id="tier-title" class="font-serif text-3xl text-[#FFFDF9]">The Sparkling First Impression</h3>
+              <p id="tier-desc" class="text-sm text-[#C9BBAA] leading-relaxed font-light">
+                Top notes represent your initial encounter. Composed of tiny volatile citrus, aldehyde, and herb molecules, they lift immediately from the skin to energize the senses before gracefully settling into the perfume's deeper soul.
+              </p>
+            </div>
+
+            <div class="bg-[#241A17] p-5 rounded-xl border border-[#B89A65]/20 space-y-2">
+              <h5 class="text-xs uppercase tracking-widest text-[#B89A65] font-semibold">Master Scentora Raw Botanicals</h5>
+              <p id="tier-materials" class="text-xs text-[#FFFDF9] font-light leading-relaxed">
+                Cold-pressed Calabrian Bergamot, Pink Peppercorns from Réunion Island, Crushed Mint, Green Nashi Pear, and Golden Saffron threads.
+              </p>
+            </div>
+
+            <div class="pt-2 text-xs text-[#C9BBAA] italic">
+              Tip: Allow a luxury perfume at least 20 minutes to transition before making your final judgment on how it melds with your natural warmth.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE FRAGRANCE FINDER QUIZ & GIFT SETS -->
+    <section class="py-24 bg-[#F7F1E8] overflow-hidden" id="quiz">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-3">Bespoke Recommendation</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight text-[#30231F]">Interactive Fragrance Finder</h2>
+          <div class="w-16 h-0.5 bg-[#B89A65] mx-auto my-4"></div>
+          <p class="text-sm sm:text-base text-[#68534c] font-light">
+            Answer 5 brief questions regarding your olfactory predilections. Our recommendation engine will formulate your bespoke flacon match.
+          </p>
+        </div>
+
+        <!-- Quiz Container Card -->
+        <div class="max-w-3xl mx-auto bg-[#FFFDF9] rounded-2xl border border-[#B89A65]/30 shadow-xl overflow-hidden p-6 sm:p-10 mb-20" data-aos="fade-up">
+          
+          <!-- Progress Bar -->
+          <div class="mb-8">
+            <div class="flex justify-between text-xs text-[#68534c] mb-2 font-medium">
+              <span id="quiz-step-label">Question 1 of 5</span>
+              <span id="quiz-progress-percent">20% Completed</span>
+            </div>
+            <div class="w-full h-1.5 bg-[#F7F1E8] rounded-full overflow-hidden">
+              <div id="quiz-progress-bar" class="h-full bg-[#B89A65] transition-all duration-500" style="width: 20%;"></div>
+            </div>
+          </div>
+
+          <!-- Step 1: Preferred Family -->
+          <div id="quiz-step-1" class="quiz-step space-y-6">
+            <h3 class="font-serif text-2xl text-[#30231F]">1. Which scent family naturally draws you in?</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <button onclick="handleQuizAnswer('family', 'Woody')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Woody & Resinous</span>
+                <span class="text-[#68534c]">Smoky cedar, aged oud, grounding sandalwood</span>
+              </button>
+              <button onclick="handleQuizAnswer('family', 'Floral')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Floral & Elegant</span>
+                <span class="text-[#68534c]">Velvety May roses, jasmine, moonlight tuberose</span>
+              </button>
+              <button onclick="handleQuizAnswer('family', 'Citrus')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Fresh & Citrus</span>
+                <span class="text-[#68534c]">Calabrian bergamot, coastal marine breezes</span>
+              </button>
+              <button onclick="handleQuizAnswer('family', 'Oriental')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Oriental & Amber</span>
+                <span class="text-[#68534c]">Warm amber resins, spices, golden labdanum</span>
+              </button>
+              <button onclick="handleQuizAnswer('family', 'Gourmand')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all sm:col-span-2">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Gourmand & Indulgent</span>
+                <span class="text-[#68534c]">Bourbon vanilla caviar, roasted tonka bean, dark rum</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Favorite Notes -->
+          <div id="quiz-step-2" class="quiz-step hidden space-y-6">
+            <h3 class="font-serif text-2xl text-[#30231F]">2. Which single note captivates your imagination?</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <button onclick="handleQuizAnswer('note', 'oud')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Cambodian Aged Oud</span>
+                <span class="text-[#68534c]">Dark, smoky, regal depth</span>
+              </button>
+              <button onclick="handleQuizAnswer('note', 'rose')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Grasse Centifolia Rose</span>
+                <span class="text-[#68534c]">Sweet, dewy, delicate petals</span>
+              </button>
+              <button onclick="handleQuizAnswer('note', 'bergamot')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Sunlit Bergamot Zest</span>
+                <span class="text-[#68534c]">Sparkling, sharp, invigorating</span>
+              </button>
+              <button onclick="handleQuizAnswer('note', 'vanilla')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Madagascar Bourbon Vanilla</span>
+                <span class="text-[#68534c]">Creamy, addictive, deeply comforting</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Preferred Occasion -->
+          <div id="quiz-step-3" class="quiz-step hidden space-y-6">
+            <h3 class="font-serif text-2xl text-[#30231F]">3. What occasion will this flacon accompany?</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <button onclick="handleQuizAnswer('occasion', 'daily')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Daily Signature Wear</span>
+                <span class="text-[#68534c]">Effortless daytime elegance at work or leisure</span>
+              </button>
+              <button onclick="handleQuizAnswer('occasion', 'evening')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Evening Gala & Black Tie</span>
+                <span class="text-[#68534c]">A commanding trail for unforgettable nights</span>
+              </button>
+              <button onclick="handleQuizAnswer('occasion', 'romantic')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Romantic Dinners & Dates</span>
+                <span class="text-[#68534c]">Close-proximity warmth and alluring silage</span>
+              </button>
+              <button onclick="handleQuizAnswer('occasion', 'vacation')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-left transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Summer Escapes & High Sun</span>
+                <span class="text-[#68534c]">Crisp Mediterranean coastal freshness</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 4: Intensity Preference -->
+          <div id="quiz-step-4" class="quiz-step hidden space-y-6">
+            <h3 class="font-serif text-2xl text-[#30231F]">4. How would you describe your intensity preference?</h3>
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <button onclick="handleQuizAnswer('intensity', 'Fresh')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Fresh</span>
+                <span class="text-[#68534c]">Airy & crisp</span>
+              </button>
+              <button onclick="handleQuizAnswer('intensity', 'Sweet')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Sweet</span>
+                <span class="text-[#68534c]">Lush & romantic</span>
+              </button>
+              <button onclick="handleQuizAnswer('intensity', 'Warm')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Warm</span>
+                <span class="text-[#68534c]">Cozy & velvety</span>
+              </button>
+              <button onclick="handleQuizAnswer('intensity', 'Intense')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">Intense</span>
+                <span class="text-[#68534c]">Bold & nocturnal</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 5: Budget Range -->
+          <div id="quiz-step-5" class="quiz-step hidden space-y-6">
+            <h3 class="font-serif text-2xl text-[#30231F]">5. What is your preferred flacon budget?</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+              <button onclick="handleQuizAnswer('budget', 'under200')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">&lt; $200</span>
+                <span class="text-[#68534c]">Colognes & Fortes</span>
+              </button>
+              <button onclick="handleQuizAnswer('budget', '200to250')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">$200 - $250</span>
+                <span class="text-[#68534c]">Signature Extraits</span>
+              </button>
+              <button onclick="handleQuizAnswer('budget', 'above250')" class="quiz-option p-4 rounded-xl border border-[#B89A65]/30 hover:border-[#B89A65] hover:bg-[#F7F1E8] text-center transition-all">
+                <span class="font-serif text-base font-bold text-[#30231F] block">$250+</span>
+                <span class="text-[#68534c]">Grand Cru Reserves</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Result State -->
+          <div id="quiz-result-view" class="hidden text-center space-y-6 py-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold">Your Match Formula</span>
+            <h3 class="font-serif text-3xl sm:text-4xl text-[#30231F]">We Recommend:</h3>
+            
+            <div id="recommended-card-mount" class="max-w-md mx-auto">
+              <!-- Dynamically populated -->
+            </div>
+
+            <div class="pt-4">
+              <button onclick="restartQuiz()" class="text-xs uppercase tracking-widest text-[#68534c] underline hover:text-[#B89A65]">
+                Retake the Finder Quiz
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Showcase Premium Discovery Gift Sets -->
+        <div id="gift-sets" class="pt-8">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-2">Artisanal Coffrets</span>
+            <h3 class="font-serif text-3xl text-[#30231F]">Premium Fragrance Discovery Gift Sets</h3>
+            <p class="text-xs sm:text-sm text-[#68534c] mt-2">Packaged in handmade Florentine gold-embossed cases, perfect for gifting or personal exploration.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
+            <!-- Gift Set 1 -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#FFFDF9] border border-[#B89A65]/40 shadow-lg flex flex-col sm:flex-row gap-6 items-center" data-aos="fade-up">
+              <img src="https://images.unsplash.com/photo-1512777576244-b846ac3d816f?auto=format&fit=crop&w=800&q=80" alt="The Grand Master Discovery Coffret" class="w-full sm:w-44 h-48 object-cover rounded-xl bg-[#1a1311] flex-shrink-0">
+              <div class="space-y-3 flex-1 w-full">
+                <span class="text-[10px] uppercase tracking-wider text-[#B89A65] font-medium">Bestselling Gift Box</span>
+                <h4 class="font-serif text-2xl text-[#30231F]">The Grand Master Coffret</h4>
+                <p class="text-xs text-[#68534c] font-light">5 x 10ml travel flacons covering Woody, Floral, Amber, and Fresh. Includes a $110 voucher towards any 100ml flacon.</p>
+                <div class="flex items-center justify-between pt-2">
+                  <span class="font-serif text-2xl text-[#30231F] font-bold">$110</span>
+                  <button onclick="window.ScentoraCart.addItem({id: 'set-01', name: 'The Grand Master Coffret', subtitle: '5x10ml Discovery Flacons', price: 110, image: 'https://images.unsplash.com/photo-1512777576244-b846ac3d816f?auto=format&fit=crop&w=800&q=80'}, 'Set of 5', 1)" class="bg-[#B89A65] hover:bg-[#a68955] text-[#30231F] px-4 py-2 rounded text-xs uppercase tracking-wider font-semibold transition-all whitespace-nowrap">
+                    Add to Bag
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gift Set 2 -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#FFFDF9] border border-[#B89A65]/40 shadow-lg flex flex-col sm:flex-row gap-6 items-center" data-aos="fade-up" data-aos-delay="100">
+              <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=800&q=80" alt="The Nocturne & Wood Edit Travel Set" class="w-full sm:w-44 h-48 object-cover rounded-xl bg-[#1a1311] flex-shrink-0">
+              <div class="space-y-3 flex-1 w-full">
+                <span class="text-[10px] uppercase tracking-wider text-[#B89A65] font-medium">Nocturnal Collection</span>
+                <h4 class="font-serif text-2xl text-[#30231F]">The Nocturne & Wood Edit</h4>
+                <p class="text-xs text-[#68534c] font-light">3 x 15ml refillable travel atomizers enclosed in brushed antique brass protective cases for evening wanderers.</p>
+                <div class="flex items-center justify-between pt-2">
+                  <span class="font-serif text-2xl text-[#30231F] font-bold">$85</span>
+                  <button onclick="window.ScentoraCart.addItem({id: 'set-02', name: 'The Nocturne & Wood Edit', subtitle: '3x15ml Travel Sprays', price: 85, image: 'https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=800&q=80'}, 'Set of 3', 1)" class="bg-[#B89A65] hover:bg-[#a68955] text-[#30231F] px-4 py-2 rounded text-xs uppercase tracking-wider font-semibold transition-all whitespace-nowrap">
+                    Add to Bag
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Consistent Footer Mount Point -->
+  <div id="scentora-footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/logo-data.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Interactive Pyramid Switcher
+    function selectPyramidTier(tier) {
+      const badge = document.getElementById('tier-badge');
+      const evap = document.getElementById('tier-evap');
+      const title = document.getElementById('tier-title');
+      const desc = document.getElementById('tier-desc');
+      const mats = document.getElementById('tier-materials');
+
+      if (tier === 'top') {
+        badge.textContent = 'Selected: Top Notes';
+        evap.textContent = 'Evaporation: 15 - 30 Minutes';
+        title.textContent = 'The Sparkling First Impression';
+        desc.textContent = "Top notes represent your initial encounter. Composed of tiny volatile citrus, aldehyde, and herb molecules, they lift immediately from the skin to energize the senses before gracefully settling into the perfume's deeper soul.";
+        mats.textContent = 'Cold-pressed Calabrian Bergamot, Pink Peppercorns from Réunion Island, Crushed Mint, Green Nashi Pear, and Golden Saffron threads.';
+      } else if (tier === 'heart') {
+        badge.textContent = 'Selected: Heart Notes';
+        evap.textContent = 'Evaporation: 30 Mins - 4 Hours';
+        title.textContent = 'The Emotional Core & Character';
+        desc.textContent = "Known as the heart or corpse of the perfume, these complex botanical molecules emerge as the top notes recede. They form the true personality of the scent, projecting gracefully around your personal aura.";
+        mats.textContent = 'May Centifolia Rose, Sambac Jasmine, Orris Butter, Spiced Labdanum, Smoked Birch, and Golden Myrrh.';
+      } else if (tier === 'base') {
+        badge.textContent = 'Selected: Base Notes';
+        evap.textContent = 'Evaporation: 4 to 24+ Hours';
+        title.textContent = 'The Lingering Memory & Silage';
+        desc.textContent = "Composed of heavy, dense molecular structures that fix the perfume to skin and fabric. The base notes interact intimately with your individual skin chemistry to leave an unforgettable, comforting signature.";
+        mats.textContent = 'Aged Cambodian Oud, Bourbon Vanilla absolute, Baltic Amber crystals, Mysore Sandalwood, and Bourbon Vetiver.';
+      }
+    }
+
+    // Quiz State Management
+    const quizAnswers = {
+      family: null,
+      note: null,
+      occasion: null,
+      intensity: null,
+      budget: null
+    };
+
+    function handleQuizAnswer(key, val) {
+      quizAnswers[key] = val;
+
+      const stepMap = {
+        family: 2,
+        note: 3,
+        occasion: 4,
+        intensity: 5,
+        budget: 'result'
+      };
+
+      const next = stepMap[key];
+
+      // Hide all steps
+      for (let i = 1; i <= 5; i++) {
+        document.getElementById(`quiz-step-${i}`).classList.add('hidden');
+      }
+
+      if (next === 'result') {
+        showQuizResult();
+      } else {
+        document.getElementById(`quiz-step-${next}`).classList.remove('hidden');
+        document.getElementById('quiz-step-label').textContent = `Question ${next} of 5`;
+        document.getElementById('quiz-progress-percent').textContent = `${next * 20}% Completed`;
+        document.getElementById('quiz-progress-bar').style.width = `${next * 20}%`;
+      }
+    }
+
+    function showQuizResult() {
+      document.getElementById('quiz-progress-bar').style.width = '100%';
+      document.getElementById('quiz-step-label').textContent = 'Discovery Formulated';
+      document.getElementById('quiz-progress-percent').textContent = '100% Completed';
+
+      // Pick matching product
+      let match = (window.SCENTORA_PRODUCTS || []).find(p => p.family === quizAnswers.family);
+      if (!match) {
+        match = (window.SCENTORA_PRODUCTS || [])[0];
+      }
+
+      const mount = document.getElementById('recommended-card-mount');
+      if (mount) {
+        mount.innerHTML = `
+          <div class="bg-[#F7F1E8] rounded-xl overflow-hidden border border-[#B89A65]/40 shadow-xl p-5 text-left space-y-4">
+            <div class="h-64 rounded-lg overflow-hidden bg-[#241A17]">
+              <img src="${match.image}" alt="${match.name}" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span class="text-[10px] uppercase tracking-wider text-[#B89A65] font-semibold">${match.family} • ${match.intensity}</span>
+              <h4 class="font-serif text-2xl text-[#30231F] mt-1">${match.name}</h4>
+              <p class="text-xs text-[#68534c] mt-1 leading-relaxed">${match.description}</p>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-[#B89A65]/20">
+              <span class="font-serif text-2xl text-[#30231F] font-bold">$${match.price}</span>
+              <button onclick="window.ScentoraCart.addItem(window.SCENTORA_PRODUCTS.find(i=>i.id==='${match.id}'))" class="bg-[#B89A65] hover:bg-[#a68955] text-[#30231F] px-6 py-2.5 rounded text-xs uppercase tracking-wider font-semibold transition-all">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('quiz-result-view').classList.remove('hidden');
+    }
+
+    function restartQuiz() {
+      document.getElementById('quiz-result-view').classList.add('hidden');
+      document.getElementById('quiz-step-1').classList.remove('hidden');
+      document.getElementById('quiz-step-label').textContent = 'Question 1 of 5';
+      document.getElementById('quiz-progress-percent').textContent = '20% Completed';
+      document.getElementById('quiz-progress-bar').style.width = '20%';
+    }
+  </script>
+</body>
+</html>
+

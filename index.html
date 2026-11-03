@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCENTORA – Haute Parfumerie Boutique | Discover the Art of Extraordinary Fragrance</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/scentora-logo.png">
+  <link rel="apple-touch-icon" href="images/scentora-logo.png">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            scentora: {
+              cream: '#F7F1E8',
+              ivory: '#FFFDF9',
+              espresso: '#30231F',
+              espressoDark: '#241A17',
+              gold: '#B89A65',
+              taupe: '#C9BBAA'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#FFFDF9] text-[#30231F] selection:bg-[#B89A65] selection:text-[#FFFDF9]">
+
+  <!-- Global Sticky Header Mount Point -->
+  <div id="scentora-header"></div>
+
+  <!-- MAIN CONTENT: EXACTLY 4 CONTENT SECTIONS AS SPECIFIED -->
+  <main>
+    
+    <!-- SECTION 1: LUXURY HERO -->
+    <section class="relative min-h-[90vh] bg-gradient-to-b from-[#241A17] via-[#30231F] to-[#241A17] text-[#FFFDF9] flex items-center justify-center overflow-hidden py-16 lg:py-24">
+      <!-- Ambient Gold Glows & Background Accents -->
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#B89A65]/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-[#B89A65]/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Content (7 cols) -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left" data-aos="fade-right">
+            <div class="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full border border-[#B89A65]/40 bg-[#30231F]/60 text-xs text-[#B89A65] tracking-[0.25em] uppercase">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#B89A65] animate-ping"></span>
+              The 2026 Grand Cru Extraits Collection
+            </div>
+            
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl leading-[1.08] tracking-tight font-light text-[#FFFDF9]">
+              Discover the Art of <br>
+              <span class="italic font-normal gold-shimmer">Extraordinary Fragrance.</span>
+            </h1>
+
+            <p class="text-[#C9BBAA] text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+              Scentora captures the ethereal spirit of high perfumery. Conceived with rare, ethically harvested botanicals and distilled with French master artistry, each flacon is an intimate olfactory masterpiece.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="shop.html" class="w-full sm:w-auto inline-flex items-center justify-center bg-[#B89A65] hover:bg-[#a68955] text-[#30231F] px-8 py-4 rounded-md text-xs uppercase tracking-[0.22em] font-semibold transition-all duration-300 shadow-xl group">
+                <span>Explore Collection</span>
+                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+              <a href="discovery.html" class="w-full sm:w-auto inline-flex items-center justify-center border border-[#B89A65]/60 hover:bg-[#B89A65]/10 text-[#FFFDF9] px-8 py-4 rounded-md text-xs uppercase tracking-[0.22em] font-light transition-all duration-300">
+                <span>Discover Your Scent</span>
+              </a>
+            </div>
+
+            <!-- Trust Metas -->
+            <div class="pt-8 border-t border-[#B89A65]/20 grid grid-cols-3 gap-4 text-center lg:text-left">
+              <div>
+                <span class="block font-serif text-2xl text-[#B89A65]">100%</span>
+                <span class="text-[11px] text-[#C9BBAA] tracking-wider uppercase">Pure Perfume Oils</span>
+              </div>
+              <div>
+                <span class="block font-serif text-2xl text-[#B89A65]">Grasse</span>
+                <span class="text-[11px] text-[#C9BBAA] tracking-wider uppercase">Master Distilled</span>
+              </div>
+              <div>
+                <span class="block font-serif text-2xl text-[#B89A65]">Bespoke</span>
+                <span class="text-[11px] text-[#C9BBAA] tracking-wider uppercase">Crystal Flacons</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero 3D Floating Bottle Visual (5 cols) -->
+          <div class="lg:col-span-5 flex justify-center relative" data-aos="zoom-in" data-aos-delay="200">
+            <!-- Decorative Backing Rings -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full border border-[#B89A65]/25 animate-pulse"></div>
+              <div class="absolute w-96 h-96 rounded-full border border-[#B89A65]/10"></div>
+            </div>
+
+            <!-- Floating Card Image -->
+            <div class="relative z-10 animate-float-3d max-w-xs sm:max-w-sm rounded-2xl p-4 bg-gradient-to-b from-[#30231F] to-[#241A17] border border-[#B89A65]/40 shadow-2xl backdrop-blur-md">
+              <div class="relative overflow-hidden rounded-xl h-[420px] bg-[#1a1311]">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80" alt="Scentora Signature Perfume Bottle - Ébène Céleste" class="w-full h-full object-cover">
+                <!-- Floating Badge -->
+                <div class="absolute bottom-4 left-4 right-4 bg-[#30231F]/90 backdrop-blur-md border border-[#B89A65]/40 p-3 rounded-lg text-center">
+                  <span class="text-[10px] uppercase tracking-[0.25em] text-[#B89A65] block">Signature Masterpiece</span>
+                  <h4 class="font-serif text-lg text-[#FFFDF9] tracking-wider">Ébène Céleste</h4>
+                  <p class="text-[11px] text-[#C9BBAA]">Smoked Oud • Bulgarian Rose • Amber</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FEATURED FRAGRANCE COLLECTIONS -->
+    <section class="py-24 bg-[#F7F1E8] text-[#30231F] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-2">Curated Olfactory Realms</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight text-[#30231F]">Featured Fragrance Collections</h2>
+          <div class="w-16 h-0.5 bg-[#B89A65] mx-auto mt-4 mb-4"></div>
+          <p class="text-sm sm:text-base text-[#68534c] font-light">Explore our four sovereign families, each harmonized to awaken distinctive emotions and lasting memories.</p>
+        </div>
+
+        <!-- Editorial Collections Grid: 4 Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Collection 1: Floral Elegance -->
+          <div class="group relative rounded-xl overflow-hidden shadow-lg bg-[#30231F] text-[#FFFDF9] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="h-96 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=80" alt="Floral Elegance Collection - Fresh May Rose Harvest" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#241A17] via-[#241A17]/40 to-transparent"></div>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-6 space-y-2">
+              <span class="text-[9.5px] uppercase tracking-[0.16em] text-[#B89A65] font-medium block whitespace-nowrap overflow-hidden text-ellipsis">Grasse Centifolia Harvest</span>
+              <h3 class="font-serif text-2xl text-[#FFFDF9]">Floral Elegance</h3>
+              <p class="text-xs text-[#C9BBAA] font-light line-clamp-2">Velvety May roses, night-blooming tuberose and crystalline jasmine petals steeped in morning sun.</p>
+              <div class="pt-2">
+                <a href="shop.html?family=Floral" class="inline-flex items-center text-xs uppercase tracking-widest text-[#B89A65] hover:text-[#FFFDF9] transition-colors font-medium">
+                  <span>Explore Floral</span>
+                  <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 2: Woody -->
+          <div class="group relative rounded-xl overflow-hidden shadow-lg bg-[#30231F] text-[#FFFDF9] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="h-96 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80" alt="Woody Collection - Sunlit Forest and Smoky Woods" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#241A17] via-[#241A17]/40 to-transparent"></div>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-6 space-y-2">
+              <span class="text-[9.5px] uppercase tracking-[0.16em] text-[#B89A65] font-medium block whitespace-nowrap overflow-hidden text-ellipsis">Aged Cambodian & Atlas Woods</span>
+              <h3 class="font-serif text-2xl text-[#FFFDF9]">Woody</h3>
+              <p class="text-xs text-[#C9BBAA] font-light line-clamp-2">Smoky birch, noble Mysore sandalwood, dark vetiver roots and ancient resinous oud.</p>
+              <div class="pt-2">
+                <a href="shop.html?family=Woody" class="inline-flex items-center text-xs uppercase tracking-widest text-[#B89A65] hover:text-[#FFFDF9] transition-colors font-medium">
+                  <span>Explore Woody</span>
+                  <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 3: Fresh & Citrus -->
+          <div class="group relative rounded-xl overflow-hidden shadow-lg bg-[#30231F] text-[#FFFDF9] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+            <div class="h-96 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80" alt="Fresh and Citrus Collection - Mediterranean Groves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#241A17] via-[#241A17]/40 to-transparent"></div>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-6 space-y-2">
+              <span class="text-[9.5px] uppercase tracking-[0.16em] text-[#B89A65] font-medium block whitespace-nowrap overflow-hidden text-ellipsis">Calabrian & Amalfi Groves</span>
+              <h3 class="font-serif text-2xl text-[#FFFDF9]">Fresh & Citrus</h3>
+              <p class="text-xs text-[#C9BBAA] font-light line-clamp-2">Sun-kissed bergamot, coastal marine breezes, crushed neroli leaves and sparkling cedrat.</p>
+              <div class="pt-2">
+                <a href="shop.html?family=Citrus" class="inline-flex items-center text-xs uppercase tracking-widest text-[#B89A65] hover:text-[#FFFDF9] transition-colors font-medium">
+                  <span>Explore Fresh</span>
+                  <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 4: Oriental & Amber -->
+          <div class="group relative rounded-xl overflow-hidden shadow-lg bg-[#30231F] text-[#FFFDF9] transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="h-96 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Oriental and Amber Collection - Golden Resins and Spices" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#241A17] via-[#241A17]/40 to-transparent"></div>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-6 space-y-2">
+              <span class="text-[9.5px] uppercase tracking-[0.16em] text-[#B89A65] font-medium block whitespace-nowrap overflow-hidden text-ellipsis">Spiced Incense & Vanilla Tears</span>
+              <h3 class="font-serif text-2xl text-[#FFFDF9]">Oriental & Amber</h3>
+              <p class="text-xs text-[#C9BBAA] font-light line-clamp-2">Golden Baltic resin, warm tonka bean, Madagascar vanilla pods and exotic cinnamon bark.</p>
+              <div class="pt-2">
+                <a href="shop.html?family=Oriental" class="inline-flex items-center text-xs uppercase tracking-widest text-[#B89A65] hover:text-[#FFFDF9] transition-colors font-medium">
+                  <span>Explore Amber</span>
+                  <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: BESTSELLING PERFUMES -->
+    <section class="py-24 bg-[#FFFDF9] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-14" data-aos="fade-up">
+          <div>
+            <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-2">Most Revered Creations</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight text-[#30231F]">Bestselling Perfumes</h2>
+          </div>
+          <div class="mt-4 md:mt-0">
+            <a href="shop.html" class="inline-flex items-center text-xs uppercase tracking-[0.2em] text-[#30231F] hover:text-[#B89A65] border-b border-[#B89A65] pb-1 transition-colors font-medium">
+              <span>View All 12 Extraits</span>
+              <svg class="w-3.5 h-3.5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Cards Container -->
+        <div id="home-bestsellers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE SCENTORA EXPERIENCE -->
+    <section class="py-24 bg-[#241A17] text-[#FFFDF9] relative overflow-hidden">
+      <!-- Glow background -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#B89A65]/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Title -->
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold block mb-2">The Atelier Standard</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight text-[#FFFDF9]">The Scentora Experience</h2>
+          <div class="w-16 h-0.5 bg-[#B89A65] mx-auto mt-4 mb-4"></div>
+          <p class="text-sm sm:text-base text-[#C9BBAA] font-light">Every flacon leaves our studio with the highest commitment to artisanal heritage, pure luxury and intimate personal connection.</p>
+        </div>
+
+        <!-- 4 Experience Pillars -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          
+          <!-- Pillar 1: Pure Ingredients -->
+          <div class="p-6 lg:p-8 rounded-xl bg-[#30231F]/70 border border-[#B89A65]/20 hover:border-[#B89A65]/60 transition-all duration-300 text-center space-y-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-14 h-14 mx-auto rounded-full bg-[#B89A65]/15 border border-[#B89A65] flex items-center justify-center text-[#B89A65]">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            </div>
+            <h3 class="font-serif text-lg sm:text-xl text-[#FFFDF9] whitespace-nowrap">Pure Ingredients</h3>
+            <p class="text-xs text-[#C9BBAA] leading-relaxed font-light">Ethically harvested natural absolutes from Grasse rose fields, Florentine orris roots and sustainable Cambodian agarwood plantations.</p>
+          </div>
+
+          <!-- Pillar 2: Rare Fragrances -->
+          <div class="p-6 lg:p-8 rounded-xl bg-[#30231F]/70 border border-[#B89A65]/20 hover:border-[#B89A65]/60 transition-all duration-300 text-center space-y-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-14 h-14 mx-auto rounded-full bg-[#B89A65]/15 border border-[#B89A65] flex items-center justify-center text-[#B89A65]">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+            </div>
+            <h3 class="font-serif text-lg sm:text-xl text-[#FFFDF9] whitespace-nowrap">Rare Fragrances</h3>
+            <p class="text-xs text-[#C9BBAA] leading-relaxed font-light">Micro-batch releases formulated by renowned master perfumers, ensuring your olfactory signature remains singularly unique.</p>
+          </div>
+
+          <!-- Pillar 3: Luxury Gift Packaging -->
+          <div class="p-6 lg:p-8 rounded-xl bg-[#30231F]/70 border border-[#B89A65]/20 hover:border-[#B89A65]/60 transition-all duration-300 text-center space-y-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-14 h-14 mx-auto rounded-full bg-[#B89A65]/15 border border-[#B89A65] flex items-center justify-center text-[#B89A65]">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+            </div>
+            <h3 class="font-serif text-lg sm:text-xl text-[#FFFDF9] whitespace-nowrap">Luxury Packaging</h3>
+            <p class="text-xs text-[#C9BBAA] leading-relaxed font-light">Hand-assembled espresso coffrets stamped with antique gold embossing, tied with woven satin ribbon and cushioned with velvet foam.</p>
+          </div>
+
+          <!-- Pillar 4: Personalized Discovery -->
+          <div class="p-6 lg:p-8 rounded-xl bg-[#30231F]/70 border border-[#B89A65]/20 hover:border-[#B89A65]/60 transition-all duration-300 text-center space-y-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="w-14 h-14 mx-auto rounded-full bg-[#B89A65]/15 border border-[#B89A65] flex items-center justify-center text-[#B89A65]">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h3 class="font-serif text-lg sm:text-xl text-[#FFFDF9] whitespace-nowrap">Bespoke Discovery</h3>
+            <p class="text-xs text-[#C9BBAA] leading-relaxed font-light">Interactive olfactory matchmaking guides paired with custom discovery coffrets so you can experience scents evolving in your space.</p>
+          </div>
+
+        </div>
+
+        <!-- Experience Call To Action Linking to About & Discovery Guide -->
+        <div class="p-8 sm:p-12 rounded-2xl bg-gradient-to-r from-[#30231F] via-[#2a1e1b] to-[#30231F] border border-[#B89A65]/30 text-center max-w-4xl mx-auto space-y-6 shadow-2xl" data-aos="zoom-in">
+          <span class="text-xs uppercase tracking-[0.3em] text-[#B89A65] font-semibold">Your Personal Invitation</span>
+          <h3 class="font-serif text-2xl sm:text-4xl text-[#FFFDF9]">Delve Deeper into the Atelier</h3>
+          <p class="text-xs sm:text-sm text-[#C9BBAA] max-w-xl mx-auto font-light leading-relaxed">
+            Whether unraveling our century-old distillation heritage or finding the exact notes tuned to your body chemistry, our boutique invites you to begin.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+            <a href="about.html" class="w-full sm:w-auto bg-[#B89A65] hover:bg-[#a68955] text-[#30231F] px-8 py-3.5 rounded text-xs uppercase tracking-[0.2em] font-semibold transition-all shadow-lg">
+              Explore Our Brand Story
+            </a>
+            <a href="discovery.html" class="w-full sm:w-auto border border-[#B89A65]/60 hover:bg-[#B89A65]/10 text-[#FFFDF9] px-8 py-3.5 rounded text-xs uppercase tracking-[0.2em] font-light transition-all">
+              Take the Fragrance Finder Quiz
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Consistent Footer Mount Point -->
+  <div id="scentora-footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/logo-data.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Populate Bestselling Perfumes on Home Page
+    document.addEventListener('DOMContentLoaded', () => {
+      const bestsellers = (window.SCENTORA_PRODUCTS || []).filter(p => p.isBestseller).slice(0, 4);
+      const container = document.getElementById('home-bestsellers-grid');
+      if (container) {
+        container.innerHTML = bestsellers.map(p => `
+          <div class="perfume-card group bg-[#F7F1E8] rounded-xl overflow-hidden border border-[#B89A65]/20 shadow-sm flex flex-col justify-between">
+            <div class="relative overflow-hidden bg-[#241A17] h-72">
+              <img src="${p.image}" alt="${p.name}" class="product-img w-full h-full object-cover">
+              
+              <!-- Family Badge -->
+              <span class="absolute top-3 left-3 bg-[#30231F]/90 backdrop-blur-sm text-[#B89A65] text-[10px] uppercase tracking-wider px-2.5 py-1 rounded border border-[#B89A65]/30">
+                ${p.family}
+              </span>
+
+              <!-- Wishlist Heart Button -->
+              <button onclick="window.ScentoraWishlist.toggle('${p.id}'); this.querySelector('svg').classList.toggle('fill-[#B89A65]');" class="absolute top-3 right-3 p-2 rounded-full bg-[#30231F]/80 text-[#FFFDF9] hover:text-[#B89A65] transition-colors" title="Save to Wishlist">
+                <svg class="w-4 h-4 ${window.ScentoraWishlist.has(p.id) ? 'fill-[#B89A65] text-[#B89A65]' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </button>
+
+              <!-- Quick View Overlay Button -->
+              <div class="absolute inset-x-0 bottom-3 px-4 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <button onclick="window.openQuickView('${p.id}')" class="w-full bg-[#30231F]/90 hover:bg-[#30231F] text-[#FFFDF9] border border-[#B89A65]/40 py-2 rounded text-xs uppercase tracking-widest font-medium transition-all shadow-md">
+                  Quick View
+                </button>
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between text-xs mb-1">
+                  <span class="text-[#B89A65] font-medium tracking-widest uppercase text-[10px]">${p.subtitle}</span>
+                  <div class="flex items-center text-[#B89A65] text-[10px]">
+                    <span>★ ★ ★ ★ ★</span>
+                    <span class="text-[#68534c] ml-1">(${p.rating})</span>
+                  </div>
+                </div>
+                <h3 class="font-serif text-xl text-[#30231F] font-medium">${p.name}</h3>
+                <p class="text-xs text-[#68534c] mt-1 line-clamp-1">Notes: ${p.topNotes[0]}, ${p.heartNotes[0]}, ${p.baseNotes[0]}</p>
+              </div>
+
+              <div class="pt-3 border-t border-[#B89A65]/20 flex items-center justify-between">
+                <span class="font-serif text-xl text-[#30231F] font-semibold">$${p.price}</span>
+                <button onclick="window.ScentoraCart.addItem(window.SCENTORA_PRODUCTS.find(i=>i.id==='${p.id}'))" class="bg-[#B89A65] hover:bg-[#a68955] text-[#30231F] px-4 py-2 rounded text-[11px] uppercase tracking-wider font-semibold transition-all">
+                  Add to Bag
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>
+
